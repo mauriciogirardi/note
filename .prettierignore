@@ -1,0 +1,6 @@
+!.storybook
+generators
+!.test
+build
+coverage
+.next
