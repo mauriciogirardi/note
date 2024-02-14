@@ -2,7 +2,9 @@ import './globals.css'
 
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { Toaster } from 'sonner'
 
+import { AuthContextProvider } from '@/context/auth'
 import { env } from '@/env'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
@@ -14,17 +16,20 @@ export const metadata: Metadata = {
     template: `%s | ${env.SITE_NAME}`,
     default: env.SITE_NAME
   },
-  description: 'Start new applications with a boilerplate'
+  description: 'An application that you can add your note by voice'
 }
 
-export default function RootLayout({
+export default async function IntlLayout({
   children
 }: {
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={inter.variable}>
-      <body className="bg-gray-900 text-gray-100">{children}</body>
+    <html lang="pt" className={inter.variable}>
+      <body className="bg-slate-900 text-slate-50 antialiased">
+        <Toaster richColors />
+        <AuthContextProvider>{children}</AuthContextProvider>
+      </body>
     </html>
   )
 }

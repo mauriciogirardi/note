@@ -1,5 +1,3 @@
-!.storybook
-generators
 !.test
 build
 coverage

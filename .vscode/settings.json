@@ -2,8 +2,10 @@
   "cSpell.words": [
     "autodocs",
     "esnext",
+    "hookform",
     "nextjs",
-    "plopfile"
+    "plopfile",
+    "sonner"
   ],
   "editor.formatOnSave": true,
 }
