@@ -10,12 +10,12 @@ export const metadata: Metadata = {
 
 export default function Note() {
   return (
-    <div className="mx-auto my-12 max-w-6xl space-y-6 px-4">
+    <div className="mx-auto my-6 max-w-full space-y-4 px-6 md:my-12 md:max-w-6xl md:space-y-6 md:px-4">
       <Header />
 
       <div className="h-px bg-slate-700" />
 
-      <div className="grid auto-rows-[250px] grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid auto-rows-[200px] grid-cols-1 gap-6 md:auto-rows-[250px] md:grid-cols-2 lg:grid-cols-3">
         <Notes />
       </div>
     </div>

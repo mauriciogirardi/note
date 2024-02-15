@@ -45,10 +45,17 @@ export function Header() {
 
   return (
     <div className="space-y-14">
-      <div className="flex items-center justify-between">
-        <Image src="/logo.svg" alt="Nlw Expert" width={140} height={50} />
+      <div className="flex items-center justify-end md:justify-between">
+        <Image
+          src="/logo.svg"
+          alt="Nlw Expert"
+          width={140}
+          height={50}
+          className="hidden md:block"
+        />
         <Profile />
       </div>
+
       <form
         className="flex w-full items-center justify-between"
         onSubmit={handleSubmit(handleSearch)}
@@ -57,7 +64,7 @@ export function Header() {
           autoComplete="off"
           type="text"
           placeholder="Busque em suas notas..."
-          className="w-full bg-transparent text-3xl font-semibold tracking-tight outline-none placeholder:text-slate-500"
+          className="w-full bg-transparent pr-4 text-2xl font-semibold tracking-tight outline-none placeholder:text-slate-500 md:text-3xl"
           {...register('search')}
         />
 

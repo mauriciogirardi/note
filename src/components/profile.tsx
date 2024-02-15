@@ -12,7 +12,7 @@ export function Profile() {
   }
 
   return (
-    <div className="p-4">
+    <div className="p-0 md:p-4">
       {user && (
         <div className="flex items-center gap-4">
           <div>
