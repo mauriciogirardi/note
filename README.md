@@ -42,4 +42,4 @@ npm run dev
 
 ---
 
-![GitHub License](https://img.shields.io/github/license/mauriciogirardi/note/blob/main/LICENSE)
+![GitHub License](https://img.shields.io/github/license/mauriciogirardi/note)
